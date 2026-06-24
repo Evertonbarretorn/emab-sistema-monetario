@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Histórico Financeiro</title>
+
+<link rel="stylesheet" href="styleHistorico.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 🔥 TOPO DO SISTEMA -->
+    <header class="topo-sistema">
+
+        <h1>📄 Histórico Financeiro</h1>
+
+        <!-- 🔥 BOTÕES SEPARADOS (NÃO MISTURAR COM CONTEÚDO) -->
+        <div class="acoes">
+            <button onclick="window.location.href='vendas.html'">
+                ← Voltar
+            </button>
+
+            <button onclick="window.print()">
+                🖨️ Imprimir Histórico
+            </button>
+        </div>
+
+    </header>
+
+    <!-- 🔥 CONTEÚDO GERADO PELO JS -->
+    <main id="conteudoHistorico"></main>
+
+</div>
+
+<script src="scriptHistorico.js"></script>
+
+
+
+</body>
+
+</html>

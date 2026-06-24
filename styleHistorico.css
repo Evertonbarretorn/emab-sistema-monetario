@@ -1,0 +1,156 @@
+body{
+    font-family: Arial;
+    background:#f3f6fb;
+}
+
+/* CUPOM */
+.cupom{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* TOPO ESCOLA */
+.topo-escola{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-bottom:2px solid #2563eb;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+
+.logo-escola{
+    width:60px;
+    height:60px;
+}
+
+.topo-escola h1{
+    font-size:18px;
+    margin:0;
+    color:#2563eb;
+}
+
+/* INFO */
+.cupom-info{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+    font-size:14px;
+}
+
+/* RESUMO ESTILO CAIXA */
+.resumo-box{
+    background:#eef2ff;
+    padding:10px;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+    font-size:14px;
+}
+
+/* TITULOS */
+.titulo-sec{
+    margin-top:15px;
+    color:#1e3a8a;
+}
+
+/* VENDAS */
+.venda-card{
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:10px;
+    background:white;
+}
+
+.venda-topo{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.venda-itens{
+    font-size:13px;
+    color:#333;
+    margin-bottom:5px;
+}
+
+.item-produto{
+    display:inline-block;
+    background:#e0e7ff;
+    padding:2px 6px;
+    border-radius:5px;
+    margin:2px;
+    font-size:12px;
+}
+
+.venda-footer{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    border-top:1px dashed #ccc;
+    padding-top:5px;
+}
+
+/* ATIVIDADE */
+.atividade{
+    margin-top:20px;
+    padding:15px;
+    border:2px solid #2563eb;
+    border-radius:10px;
+    background:#f8fafc;
+}
+
+.bloco{
+    margin-bottom:15px;
+}
+
+.linha{
+    margin-top:5px;
+    font-family:monospace;
+}
+
+/* QR Code pequeno no canto */
+
+.qr-mini{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+.qr-mini img{
+    width:90px;
+    height:90px;
+    border:1px solid #ddd;
+    padding:4px;
+    background:white;
+}
+
+/* some no modo tela (opcional) */
+@media screen{
+    .qr-print{
+        opacity: .4;
+    }
+}
+
+/* aparece bem na impressão */
+@media print{
+    .qr-print{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+/* PRINT LIMPO */
+@media print{
+    body{
+        background:white;
+    }
+}   

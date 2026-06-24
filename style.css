@@ -1,0 +1,314 @@
+body{
+    background: linear-gradient(
+        135deg,
+        #f7f5ff,
+        #ffffff
+    );
+
+    min-height:100vh;
+
+    padding:20px;
+
+    font-family:'Segoe UI', sans-serif;
+}
+
+.topo-escola{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo-escola{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+}
+
+.topo-escola h1{
+
+    margin:0;
+
+    color:#311b92;
+
+    font-size:32px;
+
+    font-weight:700;
+}
+
+.topo-escola p{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:16px;
+}
+
+
+.titulo-principal{
+
+    color:#311b92;
+
+    font-weight:800;
+
+    font-size:32px;
+}
+
+.subtitulo-principal{
+
+    color:#ff9800;
+
+    font-weight:600;
+}
+
+/* ETAPA */
+.etapa{
+
+    background:linear-gradient(
+        135deg,
+        #311b92,
+        #512da8
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:15px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+}
+
+.card{
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* CARD FORM */
+.card-form{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    border-top:6px solid #311b92;
+}
+
+/* BOTÃO CRIAR */
+.btn-criar{
+
+    background:linear-gradient(
+        135deg,
+        #ffc107,
+        #ff9800
+    );
+
+    border:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:12px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.btn-criar:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 6px 15px rgba(255,152,0,.3);
+}
+/* TURMA */
+.turma-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.2s;
+}
+
+.turma-card:hover{
+
+    transform:translateY(-4px);
+}
+
+/* PRODUTOS */
+.produtos-box {
+    background: #fff;
+    border: 2px solid #d7ead7;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.titulo {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.produto-card {
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.produto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.produto-preco {
+    color: #4caf50;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* BOTÃO ADD */
+.btn-add {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d8dff0;
+    background: #fff;
+    color: #3f51b5;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* INPUT PREÇO */
+.input-preco {
+    width: 80px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* MENU */
+.menu-box {
+    background: #fff;
+    border: 2px solid #d7ead7;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.top-info h2 {
+    font-size: 22px;
+    color: #1976d2;
+    margin: 0;
+}
+
+.info-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+.info-box h5 {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.info-box h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+.carrinho-area {
+    margin-top: 15px;
+}
+
+.produto-linha {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.produto-nome {
+    font-weight: 600;
+}
+
+.btn-mini {
+    padding: 2px 8px;
+}
+
+.product-detail input{
+    margin-top:3px;
+}
+
+.product-right{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:8px;
+}
+
+.delete-btn{
+    background:none;
+    border:none;
+    color:#ef4444;
+    cursor:pointer;
+    font-size:14px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>EMAB - Sistema Monetário (Financeiro)</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topo-escola">
+
+    <img src="img/logo-escola.png" alt="Logo da Escola" class="logo-escola">
+
+    <div>
+        <h1>Sistema Monetário</h1>
+        <p>Educação Financeira na Prática</p>
+    </div>
+    
+</div>
+
+<div class="container-fluid">
+
+<div class="row g-4">
+
+<!-- FORM -->
+<div class="col-lg-4">
+
+<div class="etapa">1. PÁGINA INICIAL</div>
+
+<div class="card-form">
+
+<h3 class="text-center text-primary mb-4">CRIAR USUÁRIO</h3>
+
+<input type="text" id="nome" class="form-control mb-3" placeholder="Nome do aluno">
+
+<select id="turma" class="form-select mb-3">
+<option value="">Selecione a turma</option>
+<option>3º Ano A</option>
+<option>3º Ano B</option>
+<option>4º Ano U</option>
+<option>5º Ano A</option>
+<option>5º Ano B</option>
+</select>
+
+<button onclick="criarUsuario()" class="btn btn-primary btn-criar w-100">
+<i class="fa-regular fa-user me-2"></i> CRIAR USUÁRIO
+</button>
+
+</div>
+</div>
+
+<!-- LISTA TURMAS -->
+<div class="col-lg-8">
+
+<div class="card p-4">
+
+<h2 class="titulo-principal"> EMAB - Sistema Monetário</h2>
+
+<h5 class="subtitulo-principal">Aprendendo Matemática e Educação Financeira</h5>
+
+<hr>
+
+<h5>Total de alunos: <span id="totalAlunos">0</span></h5>
+
+<div class="row g-3 mt-3">
+
+<!-- TURMAS -->
+<div class="col-md-4">
+<div class="card turma-card">
+<div class="card-header bg-primary text-white">3º Ano A</div>
+<ul class="list-group list-group-flush" id="ano3a"></ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card turma-card">
+<div class="card-header bg-success text-white">3º Ano B</div>
+<ul class="list-group list-group-flush" id="ano3b"></ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card turma-card">
+<div class="card-header bg-warning">4º Ano U</div>
+<ul class="list-group list-group-flush" id="ano4u"></ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card turma-card">
+<div class="card-header bg-secondary text-white">5º Ano A</div>
+<ul class="list-group list-group-flush" id="ano5a"></ul>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card turma-card">
+<div class="card-header bg-danger text-white">5º Ano B</div>
+<ul class="list-group list-group-flush" id="ano5b"></ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+/* =========================
+   TOPO ESCOLA
+========================= */
+
+.topo-escola{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 20px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:white;
+}
+
+.logo-escola{
+    width:45px;
+    height:45px;
+}
+
+.topo-texto h1{
+    font-size:18px;
+    margin:0;
+}
+
+.topo-texto p{
+    font-size:12px;
+    margin:0;
+    opacity:.8;
+}
+
+.btn-historico{
+    background:#f59e0b;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+}
+
+/* =========================
+   LAYOUT GERAL
+========================= */
+
+.container-pdv{
+    display:grid;
+    grid-template-columns:1.2fr 0.9fr 520px;
+    gap:16px;
+    padding:16px;
+    max-width:1700px;
+    margin:auto;
+    align-items:start;
+}
+
+/* PAINÉIS */
+.panel{
+    background:#ffffff;
+    border-radius:14px;
+    padding:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    border:1px solid #e5e7eb;
+    overflow:hidden;
+}
+
+.panel h3{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+
+/* =========================
+   PRODUTOS (3 COLUNAS BONITO)
+========================= */
+
+#gridProdutosContainer{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+}
+
+.product-card{
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:10px;
+    text-align:center;
+    transition:.2s;
+}
+
+.product-card:hover{
+    transform:scale(1.03);
+}
+
+.product-card .emoji{
+    font-size:24px;
+}
+
+.product-card .nome{
+    font-weight:600;
+}
+
+.product-card .preco{
+    color:#2563eb;
+    font-weight:700;
+}
+
+.product-card button{
+    margin-top:6px;
+    padding:6px;
+    border:none;
+    border-radius:8px;
+    background:#16a34a;
+    color:white;
+    cursor:pointer;
+}
+
+/* =========================
+   PRODUTOS / CARRINHO SCROLL
+========================= */
+
+.container-pdv > .panel:nth-child(1),
+.container-pdv > .panel:nth-child(2){
+    max-height:85vh;
+    overflow:auto;
+}
+
+/* =========================
+   CARRINHO
+========================= */
+
+#cartContainer{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:10px;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8fafc;
+    padding:8px 10px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+}
+
+/* =========================
+   PAGAMENTO (SEM SCROLL)
+========================= */
+
+.payment-panel{
+    width:100%;
+    min-width:520px;
+    max-height:87vh;
+    overflow-y:auto;
+
+    background:#1e3a8a;
+    border-radius:20px;
+    padding:12px;
+
+    color:white;
+    border:4px solid #f59e0b;
+}
+
+.payment-box{
+    background:#0f172a;
+    border-radius:16px;
+    padding:10px 15px 15px 15px;
+}
+.payment-box .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:8px 10px;
+    margin-bottom:8px;
+
+    background:#111827;
+    border:2px solid #22c55e;
+
+    color:#22c55e;
+
+    border-radius:10px;
+
+    font-family:'Courier New', monospace;
+    font-size:16px;
+    font-weight:bold;
+}
+.payment-panel h3{
+    margin-bottom:6px;
+}
+
+/* inputs */
+.payment-box input{
+    width:120px;
+    padding:8px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    background:#000;
+    color:#22c55e;
+    border:2px solid #22c55e;
+    border-radius:8px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.verificarValor{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border:none;
+    border-radius:10px;
+    background:#f59e0b;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.verificarValor:hover{
+    filter:brightness(1.1);
+    transform:scale(1.02);
+}
+
+#valorDigitado{
+    width:100%;
+    padding:14px;
+    margin-top:15px;
+    border:2px solid #2563eb;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    background:#eff6ff;
+    outline:none;
+    transition:.2s;
+}
+
+#valorDigitado:focus{
+    border-color:#f59e0b;
+    box-shadow:0 0 0 4px rgba(245,158,11,.2);
+}
+
+#resultadoVerificacao{
+    margin-top:12px;
+    padding:10px;
+    border-radius:10px;
+    font-weight:600;
+    text-align:center;
+}
+
+.verify-btn,
+.limpar-troco-btn{
+    flex:1;
+    height:42px;              /* força mesma altura */
+    display:flex;            /* garante alinhamento interno igual */
+    align-items:center;
+    justify-content:center;
+
+    padding:0;               /* remove diferença de padding */
+    margin:0;                /* evita diferença externa */
+
+    border:none;
+    border-radius:10px;
+
+    font-weight:700;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.verify-btn{
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+}
+
+.limpar-troco-btn{
+    border:none;
+    border-radius:10px;
+    background:#dc2626;
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.limpar-troco-btn:hover{
+    filter:brightness(1.1);
+}
+
+.finalizar-btn{
+    background:#f59e0b;
+    color:white;
+    font-size:16px;
+    margin-top: 10px;
+}
+
+.acoes-troco{
+    display:flex;
+    gap:8px;
+    margin-top:10px;
+}
+
+.finalizar-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.finalizar-btn:hover{
+    filter:brightness(1.1);
+}
+
+
+/*===TITULOS===*/
+
+.section-title{
+    margin-top:10px;
+    margin-bottom:6px;
+
+    padding:6px 10px;
+
+    background:#1f2937;
+    color:white;
+
+    font-size:12px;
+    font-weight:600;
+
+    border-radius:8px;
+
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+/* =========================
+   CÉDULAS (QUADRADOS)
+========================= */
+
+.money-item{
+    cursor:pointer;
+    transition:.2s;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:42px;
+    padding:8px;
+
+    font-size:15px;
+    font-weight:700;
+
+    border-radius:12px;
+
+    box-shadow:0 3px 6px rgba(0,0,0,.15);
+
+    user-select:none;
+    color: #000;
+}
+
+.money-item:hover{
+    transform:translateY(-2px) scale(1.05);
+}
+
+/* notas */
+.money-item.note-2{ background:#bfe7ff; }
+.money-item.note-5{ background:#a7f3d0; }
+.money-item.note-10{ background:#fde68a; }
+.money-item.note-20{ background:#fca5a5; }
+.money-item.note-50{ background:#c4b5fd; }
+.money-item.note-100{ background:#93c5fd; }
+
+/* moedas (círculos) */
+.coin{
+    border-radius:50%;
+
+    width:55px;
+    height:55px;
+
+    margin:auto;
+}
+
+.coin.c5{ background:#ffeeac; }
+.coin.c10{ background:#fef3c7; }
+.coin.c25{ background:#fde68a; }
+.coin.c50{ background:#fcd34d; }
+.coin.c1{ background:#fbbf24; }
+
+.money-grid-notas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+}
+
+.money-grid-moedas{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:8px;
+    margin-top:8px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:1100px){
+    .container-pdv{
+        grid-template-columns:1fr;
+    }
+}
